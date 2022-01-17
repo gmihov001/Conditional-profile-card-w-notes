@@ -50,10 +50,7 @@ window.onload = function() {
       const attribute = e.target.getAttribute("for"); // set attribute to be the value of the 'for' attribute of each .picker lement, eg. "lastname", "instagram", "linkedin", etc
 
       let values = {}; // new empty object
-      console.log("this.value", this.value);
-      console.log("this", this);
-      console.log("e", e);
-      console.log("elm", elm.value);
+      console.log("this.value", this.value); //substitute for elm.value
 
       values[attribute] = //create a key in values object with each attribute for's value
         this.value == "" || this.value == "null" //if value is empty or null - return null for that key
