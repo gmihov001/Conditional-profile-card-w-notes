@@ -61,7 +61,7 @@ window.onload = function() {
           ? false
           : this.value; //in all other cases assign the value
 
-      render(Object.assign(window.variables, values));
+      render(Object.assign(window.variables, values)); //merge window.variables with values
     });
   });
 };
